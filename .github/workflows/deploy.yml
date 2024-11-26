@@ -20,3 +20,7 @@ jobs:
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+      - name: secret-variable-test
+        run: |
+          echo ${{ secrets.MY_ENV_NAME }}
+          echo ${{ secrets.MY_ENV_PASSWORD }}

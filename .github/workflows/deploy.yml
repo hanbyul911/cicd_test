@@ -10,5 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: simple-test
+      - name: simple-test2
         run: echo "This is the first CICD"
+      - name: multi-line-test
+        run: |
+          echo "line 1"
+          echo "line 2"
+      - name: Github-variable-test
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
